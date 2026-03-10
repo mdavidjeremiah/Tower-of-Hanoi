@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Of Hanoi | Simulated Game</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="simulator">
+        <div class="game-container">
+            <h1>TOWER OF HANOI</h1>
+            <div class="tower-row" id="pegRow">
+                <div class="peg-wrapper" data-peg="0" id="peg0Wrapper">
+                    <span class="peg-label">A</span>
+                    <canvas id="peg0Canvas" width="220" height="220">
+                    </canvas>
+                </div>
+
+                <div class="peg-wrapper" data-peg="1" id="peg1Wrapper">
+                    <span class="peg-label">B</span>
+                    <canvas id="peg1Canvas" width="220" height="220">
+                    </canvas>
+                </div>
+
+                <div class="peg-wrapper" data-peg="2" id="peg2Wrapper">
+                    <span class="peg-label">C</span>
+                    <canvas id="peg2Canvas" width="220" height="220">
+                    </canvas>
+                </div>
+            </div>
+
+            <div class="control-panel">
+                <div class="disk-counter" id="diskCountDisplay">3 Disks</div>
+                <div class="btn-group">
+                    <button class="btn" id="decBtn" title="decrease disks">
+                        -
+                    </button>
+                    <button class="btn reset" id="resetBtn" title="reset game">
+                        <>
+                    </button>
+                    <button class="btn" id="incBtn" title="increase disks">
+                        +
+                    </button>
+                </div>
+                <div class="move-indicator" id="moveCounter">0</div>
+                
+            </div>
+            <div class="status" id="statusMessage">Click a peg to SELECT, then ANOTHER</div> 
+            <div class="footer-note">Select peg & Move & Solve Step By Step</div>
+        </div>
+    </div>
+    <!-- End -->
+    <script src="scripts/app.js"></script>
+</body>
+</html>
